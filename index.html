@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<body>
+<body style="background-color:#30B974">
+<title>Food Rating System User Rating</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+<div class="w3-container">
+
+<h2>The dishes are delicious &#128522; </h2>
+
+
+<div class="w3-light-grey">
+  <div id="myBar" class="w3-container w3-blue" style="height:24px;width:20%"></div>
+  </div>
+
+  <p id="demo">1%</p>
+
+  <button class="w3-button w3-pink" onclick="move()">Click Me</button> 
+</div>
+
+<script>
+function move() {
+  var elem = document.getElementById("myBar");   
+  var width = 20;
+  var id = setInterval(frame, 10);
+  function frame() {
+    if (width >= 100) {
+      clearInterval(id);
+    } else {
+      width++; 
+      elem.style.width = width + '%'; 
+      document.getElementById("demo").innerHTML = width * 1  + '%';
+    }
+  }
+}
+</script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.fa {
+  font-size: 50px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.fa:hover {
+  color: darkblue;
+}
+</style>
+</head>
+<body>
+
+<h2>Foods are not good &#128544; </h2>
+
+<i onclick="myFunction(this)" class="fa fa-thumbs-up"></i>
+
+<script>
+function myFunction(x) {
+  x.classList.toggle("fa-thumbs-down");
+}
+</script>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: black;
+   color: white;
+   text-align: center;
+}
+</style>
+</head>
+<body>
+
+
+
+
+<div class="footer">
+  <p>© 2019 Food Rating System All Rights Reserved</p>
+</div>
+
+</body>
+</html> 
+
+</body>
+</html>
+
+
